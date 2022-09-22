@@ -30,13 +30,15 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.kullanıcıYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.markaYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kullanıcıYönetimiToolStripMenuItem});
+            this.kullanıcıYönetimiToolStripMenuItem,
+            this.markaYönetimiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 27);
@@ -49,6 +51,13 @@
             this.kullanıcıYönetimiToolStripMenuItem.Size = new System.Drawing.Size(127, 23);
             this.kullanıcıYönetimiToolStripMenuItem.Text = "Kullanıcı Yönetimi";
             this.kullanıcıYönetimiToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıYönetimiToolStripMenuItem_Click);
+            // 
+            // markaYönetimiToolStripMenuItem
+            // 
+            this.markaYönetimiToolStripMenuItem.Name = "markaYönetimiToolStripMenuItem";
+            this.markaYönetimiToolStripMenuItem.Size = new System.Drawing.Size(117, 23);
+            this.markaYönetimiToolStripMenuItem.Text = "Marka Yönetimi";
+            this.markaYönetimiToolStripMenuItem.Click += new System.EventHandler(this.markaYönetimiToolStripMenuItem_Click);
             // 
             // AnaMenu
             // 
@@ -71,5 +80,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem kullanıcıYönetimiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem markaYönetimiToolStripMenuItem;
     }
 }
