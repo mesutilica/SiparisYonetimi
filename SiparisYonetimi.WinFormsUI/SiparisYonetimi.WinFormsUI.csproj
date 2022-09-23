@@ -62,6 +62,12 @@
     <Compile Include="AnaMenu.Designer.cs">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="KategoriYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriYonetimi.Designer.cs">
+      <DependentUpon>KategoriYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="KullaniciYonetimi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,16 +80,28 @@
     <Compile Include="MarkaYonetimi.Designer.cs">
       <DependentUpon>MarkaYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="MusteriYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriYonetimi.Designer.cs">
+      <DependentUpon>MusteriYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AnaMenu.resx">
       <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriYonetimi.resx">
+      <DependentUpon>KategoriYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KullaniciYonetimi.resx">
       <DependentUpon>KullaniciYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MarkaYonetimi.resx">
       <DependentUpon>MarkaYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriYonetimi.resx">
+      <DependentUpon>MusteriYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
