@@ -33,6 +33,7 @@
             this.markaYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kategoriYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.müşteriYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ürünYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +43,8 @@
             this.kullanıcıYönetimiToolStripMenuItem,
             this.markaYönetimiToolStripMenuItem,
             this.kategoriYönetimiToolStripMenuItem,
-            this.müşteriYönetimiToolStripMenuItem});
+            this.müşteriYönetimiToolStripMenuItem,
+            this.ürünYönetimiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 27);
@@ -77,6 +79,13 @@
             this.müşteriYönetimiToolStripMenuItem.Text = "Müşteri Yönetimi";
             this.müşteriYönetimiToolStripMenuItem.Click += new System.EventHandler(this.müşteriYönetimiToolStripMenuItem_Click);
             // 
+            // ürünYönetimiToolStripMenuItem
+            // 
+            this.ürünYönetimiToolStripMenuItem.Name = "ürünYönetimiToolStripMenuItem";
+            this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(109, 23);
+            this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
+            this.ürünYönetimiToolStripMenuItem.Click += new System.EventHandler(this.ürünYönetimiToolStripMenuItem_Click);
+            // 
             // AnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,5 +110,6 @@
         private System.Windows.Forms.ToolStripMenuItem markaYönetimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kategoriYönetimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem müşteriYönetimiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ürünYönetimiToolStripMenuItem;
     }
 }

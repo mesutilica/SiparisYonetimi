@@ -33,5 +33,11 @@ namespace SiparisYonetimi.WinFormsUI
             MusteriYonetimi musteriYonetimi = new MusteriYonetimi();
             musteriYonetimi.ShowDialog();
         }
+
+        private void ürünYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UrunYonetimi urunYonetimi = new UrunYonetimi();
+            urunYonetimi.ShowDialog();
+        }
     }
 }
