@@ -39,5 +39,10 @@ namespace SiparisYonetimi.WinFormsUI
             UrunYonetimi urunYonetimi = new UrunYonetimi();
             urunYonetimi.ShowDialog();
         }
+
+        private void AnaMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); // Eğer ana ekran kapatılırsa uygulamayı kapat
+        }
     }
 }
