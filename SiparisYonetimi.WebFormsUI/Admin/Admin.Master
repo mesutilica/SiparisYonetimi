@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="SiparisYonetimi.WebFormsUI.Admin.Admin" %>
+
+<%@ Register Src="~/Moduller/SidebarMenu.ascx" TagPrefix="uc1" TagName="SidebarMenu" %>
+<%@ Register Src="~/Moduller/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/dashboard.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <uc1:Header runat="server" ID="Header" />
+
+        <div class="container-fluid">
+            <div class="row">
+                <uc1:SidebarMenu runat="server" ID="SidebarMenu" />
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </main>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

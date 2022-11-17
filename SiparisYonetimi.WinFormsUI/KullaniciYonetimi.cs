@@ -1,7 +1,7 @@
 ﻿using SiparisYonetimi.Business.Managers;
+using SiparisYonetimi.Entities;
 using System;
 using System.Windows.Forms;
-using SiparisYonetimi.Entities;
 
 namespace SiparisYonetimi.WinFormsUI
 {
