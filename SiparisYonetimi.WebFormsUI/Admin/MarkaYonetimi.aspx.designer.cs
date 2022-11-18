@@ -11,17 +11,17 @@ namespace SiparisYonetimi.WebFormsUI.Admin
 {
 
 
-    public partial class KategoriYonetimi
+    public partial class MarkaYonetimi
     {
 
         /// <summary>
-        /// dgvKategoriler control.
+        /// dgvMarkalar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvKategoriler;
+        protected global::System.Web.UI.WebControls.GridView dgvMarkalar;
 
         /// <summary>
         /// ltMesaj control.
@@ -33,13 +33,31 @@ namespace SiparisYonetimi.WebFormsUI.Admin
         protected global::System.Web.UI.WebControls.Literal ltMesaj;
 
         /// <summary>
-        /// txtKategoriAdi control.
+        /// txtMarkaAdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtKategoriAdi;
+        protected global::System.Web.UI.WebControls.TextBox txtMarkaAdi;
+
+        /// <summary>
+        /// fuLogo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fuLogo;
+
+        /// <summary>
+        /// hfResimAdi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfResimAdi;
 
         /// <summary>
         /// txtAciklama control.
