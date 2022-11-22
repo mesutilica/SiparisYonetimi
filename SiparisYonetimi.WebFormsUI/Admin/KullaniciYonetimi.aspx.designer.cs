@@ -11,71 +11,62 @@ namespace SiparisYonetimi.WebFormsUI.Admin
 {
 
 
-    public partial class UrunYonetimi
+    public partial class KullaniciYonetimi
     {
 
         /// <summary>
-        /// dgvUrunler control.
+        /// dgvKullanicilar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvUrunler;
+        protected global::System.Web.UI.WebControls.GridView dgvKullanicilar;
 
         /// <summary>
-        /// ltMesaj control.
+        /// txtAdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltMesaj;
+        protected global::System.Web.UI.WebControls.TextBox txtAdi;
 
         /// <summary>
-        /// txtUrunAdi control.
+        /// txtSoyadi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUrunAdi;
+        protected global::System.Web.UI.WebControls.TextBox txtSoyadi;
 
         /// <summary>
-        /// txtAciklama control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAciklama;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// txtFiyat control.
+        /// txtTelefon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFiyat;
+        protected global::System.Web.UI.WebControls.TextBox txtTelefon;
 
         /// <summary>
-        /// txtStok control.
+        /// txtAdres control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStok;
-
-        /// <summary>
-        /// fuResim control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fuResim;
+        protected global::System.Web.UI.WebControls.TextBox txtAdres;
 
         /// <summary>
         /// chbDurum control.
@@ -85,24 +76,6 @@ namespace SiparisYonetimi.WebFormsUI.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chbDurum;
-
-        /// <summary>
-        /// cbKategoriler control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cbKategoriler;
-
-        /// <summary>
-        /// cbMarkalar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cbMarkalar;
 
         /// <summary>
         /// btnEkle control.
