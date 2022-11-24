@@ -74,6 +74,7 @@
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\KategoriYonetimi.aspx" />
     <Content Include="Admin\KullaniciYonetimi.aspx" />
+    <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\MarkaYonetimi.aspx" />
     <Content Include="Admin\MusteriYonetimi.aspx" />
     <Content Include="Admin\UrunYonetimi.aspx" />
@@ -95,10 +96,13 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\dashboard.css" />
+    <Content Include="Content\Style.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Img\lock-300x300.png" />
     <Content Include="Moduller\Header.ascx" />
     <Content Include="Moduller\SidebarMenu.ascx" />
+    <Content Include="Moduller\Slider.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -143,6 +147,13 @@
     </Compile>
     <Compile Include="Admin\KullaniciYonetimi.aspx.designer.cs">
       <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\MarkaYonetimi.aspx.cs">
       <DependentUpon>MarkaYonetimi.aspx</DependentUpon>
@@ -196,6 +207,13 @@
     <Compile Include="Moduller\SidebarMenu.ascx.designer.cs">
       <DependentUpon>SidebarMenu.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Moduller\Slider.ascx.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Moduller\Slider.ascx.designer.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Onyuz.Master.cs">
       <DependentUpon>Onyuz.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -242,7 +260,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

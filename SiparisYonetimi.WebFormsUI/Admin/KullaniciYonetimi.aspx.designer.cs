@@ -60,13 +60,22 @@ namespace SiparisYonetimi.WebFormsUI.Admin
         protected global::System.Web.UI.WebControls.TextBox txtTelefon;
 
         /// <summary>
-        /// txtAdres control.
+        /// txtKullaniciAdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAdres;
+        protected global::System.Web.UI.WebControls.TextBox txtKullaniciAdi;
+
+        /// <summary>
+        /// txtSifre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSifre;
 
         /// <summary>
         /// chbDurum control.
@@ -76,6 +85,15 @@ namespace SiparisYonetimi.WebFormsUI.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chbDurum;
+
+        /// <summary>
+        /// chbAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chbAdmin;
 
         /// <summary>
         /// btnEkle control.

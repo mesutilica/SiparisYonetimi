@@ -1,11 +1,6 @@
 ﻿using SiparisYonetimi.Business.Managers;
 using SiparisYonetimi.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SiparisYonetimi.WebFormsUI.Admin
 {
@@ -27,7 +22,7 @@ namespace SiparisYonetimi.WebFormsUI.Admin
             customer.Surname = txtSoyadi.Text;
             customer.Address = txtAdres.Text;
             customer.IsActive = chbDurum.Checked;
-            
+
             try
             {
                 manager.Add(customer);

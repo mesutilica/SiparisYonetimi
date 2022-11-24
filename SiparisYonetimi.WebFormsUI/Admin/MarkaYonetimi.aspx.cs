@@ -1,12 +1,7 @@
 ﻿using SiparisYonetimi.Business.Managers;
 using SiparisYonetimi.Entities;
 using System;
-using System.Collections.Generic;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SiparisYonetimi.WebFormsUI.Admin
 {

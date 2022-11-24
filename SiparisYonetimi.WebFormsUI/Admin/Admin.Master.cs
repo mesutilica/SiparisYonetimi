@@ -6,7 +6,10 @@ namespace SiparisYonetimi.WebFormsUI.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["admin"] == null) // Session nesnesi web uygulamalarında kullanılır ve sayfalar arası veri taşıyabilir
+            {
+                //Response.Redirect("/Admin/Login.aspx");
+            }
         }
     }
 }

@@ -8,7 +8,7 @@
     <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Ara" aria-label="Search">
     <div class="navbar-nav">
         <div class="nav-item text-nowrap">
-            <a class="nav-link px-3" href="#">Oturumu Kapat</a>
+            <asp:LinkButton ID="lbCikis" runat="server" CssClass="nav-link px-3" OnClick="lbCikis_Click">Oturumu Kapat</asp:LinkButton>
         </div>
     </div>
 </header>

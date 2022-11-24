@@ -1,12 +1,7 @@
 ﻿using SiparisYonetimi.Business.Managers;
 using SiparisYonetimi.Entities;
 using System;
-using System.Collections.Generic;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SiparisYonetimi.WebFormsUI.Admin
 {
@@ -120,7 +115,7 @@ namespace SiparisYonetimi.WebFormsUI.Admin
                 var urun = manager.Find(id);
                 txtUrunAdi.Text = urun.Name;
                 txtStok.Text = urun.Stock.ToString();
-                
+
                 txtFiyat.Text = urun.Price.ToString();
                 txtAciklama.Text = urun.Description;
                 chbDurum.Checked = urun.IsActive;
