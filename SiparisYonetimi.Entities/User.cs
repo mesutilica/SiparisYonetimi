@@ -6,13 +6,13 @@ namespace SiparisYonetimi.Entities
     public class User : IEntity
     {
         public int Id { get; set; }
-        [StringLength(50)] // Veritabanında oluşan kolonun nvarcharmax yerine nvarchar(50) olması için
+        [StringLength(50), Required] // Veritabanında oluşan kolonun nvarcharmax yerine nvarchar(50) olması için
         public string Name { get; set; }
-        [StringLength(50)]
+        [StringLength(50), Required]
         public string Surname { get; set; }
-        [StringLength(50)]
+        [StringLength(50), Required]
         public string Email { get; set; }
-        [StringLength(50)]
+        [StringLength(15)]
         public string Phone { get; set; }
         [StringLength(50)]
         public string Username { get; set; }

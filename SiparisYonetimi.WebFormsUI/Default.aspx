@@ -7,6 +7,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
     <uc1:Slider runat="server" ID="Slider" />
 
     <div class="container marketing">

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace SiparisYonetimi.Entities
 {
     public class Category : IEntity
     {
         public int Id { get; set; }
+        [StringLength(100), Required]
         public string Name { get; set; }
         public string Description { get; set; }
         public bool IsActive { get; set; }

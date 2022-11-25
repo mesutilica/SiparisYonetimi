@@ -77,6 +77,7 @@
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\MarkaYonetimi.aspx" />
     <Content Include="Admin\MusteriYonetimi.aspx" />
+    <Content Include="Admin\SliderYonetimi.aspx" />
     <Content Include="Admin\UrunYonetimi.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -100,6 +101,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Img\lock-300x300.png" />
+    <Content Include="Kategori.aspx" />
     <Content Include="Moduller\Header.ascx" />
     <Content Include="Moduller\SidebarMenu.ascx" />
     <Content Include="Moduller\Slider.ascx" />
@@ -169,6 +171,13 @@
     <Compile Include="Admin\MusteriYonetimi.aspx.designer.cs">
       <DependentUpon>MusteriYonetimi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\SliderYonetimi.aspx.cs">
+      <DependentUpon>SliderYonetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SliderYonetimi.aspx.designer.cs">
+      <DependentUpon>SliderYonetimi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\UrunYonetimi.aspx.cs">
       <DependentUpon>UrunYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -192,6 +201,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori.aspx.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategori.aspx.designer.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
     </Compile>
     <Compile Include="Moduller\Header.ascx.cs">
       <DependentUpon>Header.ascx</DependentUpon>
@@ -260,6 +276,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Img\Slides\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

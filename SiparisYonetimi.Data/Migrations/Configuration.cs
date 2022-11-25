@@ -25,8 +25,10 @@ namespace SiparisYonetimi.Data.Migrations
                     IsActive = true,
                     IsAdmin = true,
                     Name = "Admin",
+                    Surname = "User",
                     Username = "Admin",
-                    Password = "123"
+                    Password = "123",
+                    Phone = "123"
                 });
                 context.SaveChanges(); // Değişiklikleri veritabanına işle
             }

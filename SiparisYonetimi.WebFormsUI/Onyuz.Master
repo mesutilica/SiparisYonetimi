@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="tr">
 <head runat="server">
     <title></title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -24,10 +24,19 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/">Anasayfa</a>
                             </li>
+
+                            <asp:Repeater ID="rptKategoriler" runat="server">
+                                <ItemTemplate>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="Kategori.aspx?id=<%#Eval("Id") %>"><%#Eval("Name") %></a>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="Iletisim.aspx">İletişim</a>
+                                <a class="nav-link active" href="Iletisim.aspx">İletişim</a>
                             </li>
-                            
+
                         </ul>
                         <div class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Ürün Ara" aria-label="Search">

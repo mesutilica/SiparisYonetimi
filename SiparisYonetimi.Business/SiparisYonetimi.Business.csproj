@@ -55,6 +55,7 @@
     <Compile Include="Managers\CategoryManager.cs" />
     <Compile Include="Managers\CustomerManager.cs" />
     <Compile Include="Managers\ProductManager.cs" />
+    <Compile Include="Managers\SliderManager.cs" />
     <Compile Include="Managers\UserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IRepository.cs" />
