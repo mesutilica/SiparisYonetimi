@@ -11,61 +11,52 @@ namespace SiparisYonetimi.WebFormsUI
 {
 
 
-    public partial class Onyuz
+    public partial class UrunDetay
     {
 
         /// <summary>
-        /// head control.
+        /// urunResmi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Image urunResmi;
 
         /// <summary>
-        /// form1 control.
+        /// ltUrunAdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Literal ltUrunAdi;
 
         /// <summary>
-        /// rptKategoriler control.
+        /// ltUrunFiyati control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptKategoriler;
+        protected global::System.Web.UI.WebControls.Literal ltUrunFiyati;
 
         /// <summary>
-        /// txtUrunAra control.
+        /// lblUrunStok control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUrunAra;
+        protected global::System.Web.UI.WebControls.Label lblUrunStok;
 
         /// <summary>
-        /// btnAra control.
+        /// ltUrunAciklama control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAra;
-
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Literal ltUrunAciklama;
     }
 }

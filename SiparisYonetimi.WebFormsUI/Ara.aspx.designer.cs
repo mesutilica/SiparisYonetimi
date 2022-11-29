@@ -11,26 +11,17 @@ namespace SiparisYonetimi.WebFormsUI
 {
 
 
-    public partial class Kategori
+    public partial class Ara
     {
 
         /// <summary>
-        /// ltKategoriAdi control.
+        /// ltBaslik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltKategoriAdi;
-
-        /// <summary>
-        /// ltAciklama control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltAciklama;
+        protected global::System.Web.UI.WebControls.Literal ltBaslik;
 
         /// <summary>
         /// rptUrunler control.

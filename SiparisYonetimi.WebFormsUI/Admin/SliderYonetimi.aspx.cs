@@ -1,11 +1,6 @@
 ﻿using SiparisYonetimi.Business.Managers;
 using SiparisYonetimi.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SiparisYonetimi.WebFormsUI.Admin
 {
@@ -42,7 +37,7 @@ namespace SiparisYonetimi.WebFormsUI.Admin
             {
                 Response.Write("Hata Oluştu!");
             }
-            
+
         }
 
         protected void btnGuncelle_Click(object sender, EventArgs e)

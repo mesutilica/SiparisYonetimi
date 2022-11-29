@@ -79,6 +79,7 @@
     <Content Include="Admin\MusteriYonetimi.aspx" />
     <Content Include="Admin\SliderYonetimi.aspx" />
     <Content Include="Admin\UrunYonetimi.aspx" />
+    <Content Include="Ara.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -100,8 +101,10 @@
     <Content Include="Content\Style.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Iletisim.aspx" />
     <Content Include="Img\lock-300x300.png" />
     <Content Include="Kategori.aspx" />
+    <Content Include="Marka.aspx" />
     <Content Include="Moduller\Header.ascx" />
     <Content Include="Moduller\SidebarMenu.ascx" />
     <Content Include="Moduller\Slider.ascx" />
@@ -119,6 +122,7 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="UrunDetay.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +189,13 @@
     <Compile Include="Admin\UrunYonetimi.aspx.designer.cs">
       <DependentUpon>UrunYonetimi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ara.aspx.cs">
+      <DependentUpon>Ara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ara.aspx.designer.cs">
+      <DependentUpon>Ara.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -202,12 +213,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Iletisim.aspx.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iletisim.aspx.designer.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Kategori.aspx.cs">
       <DependentUpon>Kategori.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Kategori.aspx.designer.cs">
       <DependentUpon>Kategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Marka.aspx.cs">
+      <DependentUpon>Marka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Marka.aspx.designer.cs">
+      <DependentUpon>Marka.aspx</DependentUpon>
     </Compile>
     <Compile Include="Moduller\Header.ascx.cs">
       <DependentUpon>Header.ascx</DependentUpon>
@@ -238,6 +263,13 @@
       <DependentUpon>Onyuz.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrunDetay.aspx.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunDetay.aspx.designer.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Onyuz.Master" />

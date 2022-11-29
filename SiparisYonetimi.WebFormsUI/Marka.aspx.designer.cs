@@ -11,17 +11,17 @@ namespace SiparisYonetimi.WebFormsUI
 {
 
 
-    public partial class Kategori
+    public partial class Marka
     {
 
         /// <summary>
-        /// ltKategoriAdi control.
+        /// ltMarkaAdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltKategoriAdi;
+        protected global::System.Web.UI.WebControls.Literal ltMarkaAdi;
 
         /// <summary>
         /// ltAciklama control.

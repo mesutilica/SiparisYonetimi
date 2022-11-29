@@ -1,16 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Onyuz.Master" AutoEventWireup="true" CodeBehind="Kategori.aspx.cs" Inherits="SiparisYonetimi.WebFormsUI.Kategori" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Onyuz.Master" AutoEventWireup="true" CodeBehind="Ara.aspx.cs" Inherits="SiparisYonetimi.WebFormsUI.Ara" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>
-        <asp:Literal ID="ltKategoriAdi" runat="server"></asp:Literal>
+        <asp:Literal ID="ltBaslik" runat="server"></asp:Literal>
     </h1>
-    
-    <p>
-        <asp:Literal ID="ltAciklama" runat="server"></asp:Literal>
-    </p>
 
     <div class="row row-cols-3">
         <asp:Repeater ID="rptUrunler" runat="server">

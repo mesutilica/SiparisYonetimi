@@ -39,15 +39,15 @@
 
                         </ul>
                         <div class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Ürün Ara" aria-label="Search">
-                            <button class="btn btn-light" type="submit">Ara</button>
+                            <asp:TextBox ID="txtUrunAra" runat="server" CssClass="form-control me-2" required placeholder="Ürün Ara"></asp:TextBox>
+                            <asp:Button ID="btnAra" runat="server" Text="Ara" CssClass="btn btn-light" OnClick="btnAra_Click" />
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main>
+        <main class="container mt-3">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </main>

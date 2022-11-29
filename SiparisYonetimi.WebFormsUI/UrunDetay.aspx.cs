@@ -3,9 +3,8 @@ using System;
 
 namespace SiparisYonetimi.WebFormsUI
 {
-    public partial class Kategori : System.Web.UI.Page
+    public partial class UrunDetay : System.Web.UI.Page
     {
-        CategoryManager manager = new CategoryManager();
         ProductManager productManager = new ProductManager();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -15,16 +14,16 @@ namespace SiparisYonetimi.WebFormsUI
                 {
                     int id = Convert.ToInt32(Request.QueryString["id"]);
 
-                    var kategori = manager.Find(id);
+                    var urun = productManager.Find(id);
 
-                    ltKategoriAdi.Text = kategori.Name;
-
-                    ltAciklama.Text = kategori.Description;
-
-                    var urunler = productManager.GetAll(p => p.CategoryId == id && p.IsActive == true);
-
-                    rptUrunler.DataSource = urunler;
-                    rptUrunler.DataBind();
+                    if (urun != null)
+                    {
+                        urunResmi.ImageUrl = "/Img/" + urun.Image;
+                        ltUrunAdi.Text = urun.Name;
+                        ltUrunFiyati.Text = urun.Price.ToString();
+                        lblUrunStok.Text = urun.Stock.ToString();
+                        ltUrunAciklama.Text = urun.Description;
+                    }
                 }
                 catch (Exception)
                 {
