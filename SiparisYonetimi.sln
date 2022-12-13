@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiparisYonetimi.Business", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiparisYonetimi.WebFormsUI", "SiparisYonetimi.WebFormsUI\SiparisYonetimi.WebFormsUI.csproj", "{4BB9833C-C192-4838-B4FD-2582AF85817C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiparisYonetimi.MVCUI", "SiparisYonetimi.MVCUI\SiparisYonetimi.MVCUI.csproj", "{A9EC8F46-BFF1-4400-84E4-AA46DBD9FE39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4BB9833C-C192-4838-B4FD-2582AF85817C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BB9833C-C192-4838-B4FD-2582AF85817C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BB9833C-C192-4838-B4FD-2582AF85817C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9EC8F46-BFF1-4400-84E4-AA46DBD9FE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9EC8F46-BFF1-4400-84E4-AA46DBD9FE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9EC8F46-BFF1-4400-84E4-AA46DBD9FE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9EC8F46-BFF1-4400-84E4-AA46DBD9FE39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
