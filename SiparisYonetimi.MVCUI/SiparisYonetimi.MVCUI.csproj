@@ -126,6 +126,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\MainController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SliderYonetimiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -165,6 +166,10 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\Shared\Header.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\SidebarMenu.cshtml" />
+    <Content Include="Areas\Admin\Views\SliderYonetimi\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SliderYonetimi\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\SliderYonetimi\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\SliderYonetimi\Delete.cshtml" />
     <None Include="Scripts\jquery-3.6.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.1.js" />
     <Content Include="Scripts\jquery-3.6.1.min.js" />
@@ -194,6 +199,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Img\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +228,16 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.6.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiparisYonetimi.Business\SiparisYonetimi.Business.csproj">
+      <Project>{de6fbb7b-6cc8-4711-bd10-9b480b38e0a0}</Project>
+      <Name>SiparisYonetimi.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiparisYonetimi.Entities\SiparisYonetimi.Entities.csproj">
+      <Project>{b1a5b78b-6c73-406d-a13a-3ea533c743f3}</Project>
+      <Name>SiparisYonetimi.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,17 +12,16 @@
 
     <div class="container-fluid">
         <div class="row">
-
+            @Html.Partial("SidebarMenu")
         </div>
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Sipariş Yönetimi Admin</p>
-        </footer>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            @RenderBody()
+        </main>
+        
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-   
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
