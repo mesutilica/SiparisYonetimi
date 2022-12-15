@@ -5,70 +5,41 @@ using System.Web.Mvc;
 
 namespace SiparisYonetimi.MVCUI.Areas.Admin.Controllers
 {
-    public class SliderYonetimiController : Controller
+    public class BrandsController : Controller
     {
-        SliderManager manager = new SliderManager();
-        // GET: Admin/SliderYonetimi
+        BrandManager manager = new BrandManager();
+        // GET: Admin/Brands
         public ActionResult Index()
         {
             var model = manager.GetAll();
             return View(model);
         }
 
-        // GET: Admin/SliderYonetimi/Details/5
+        // GET: Admin/Brands/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Admin/SliderYonetimi/Create
+        // GET: Admin/Brands/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Admin/SliderYonetimi/Create
+        // POST: Admin/Brands/Create
         [HttpPost]
-        public ActionResult Create(Slide slide, HttpPostedFileBase Image)
+        public ActionResult Create(Brand brand, HttpPostedFileBase Logo)
         {
             try
             {
                 // TODO: Add insert logic here
-                if (Image != null)
+                if (Logo != null)
                 {
-                    Image.SaveAs(Server.MapPath("/Img/" + Image.FileName));
-                    slide.Image = Image.FileName;
+                    Logo.SaveAs(Server.MapPath("/Img/" + Logo.FileName));
+                    brand.Logo = Logo.FileName;
                 }
-                manager.Add(slide);
-                manager.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Admin/SliderYonetimi/Edit/5
-        public ActionResult Edit(int id)
-        {
-            var model = manager.Find(id);
-            return View(model);
-        }
-
-        // POST: Admin/SliderYonetimi/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, Slide slide, HttpPostedFileBase Image)
-        {
-            try
-            {
-                // TODO: Add update logic here
-                if (Image != null)
-                {
-                    Image.SaveAs(Server.MapPath("/Img/" + Image.FileName));
-                    slide.Image = Image.FileName;
-                }
-                manager.Update(slide);
+                manager.Add(brand);
                 manager.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -76,17 +47,47 @@ namespace SiparisYonetimi.MVCUI.Areas.Admin.Controllers
             {
                 ModelState.AddModelError("", "Hata Oluştu!");
             }
-            return View(slide);
+            return View(brand);
         }
 
-        // GET: Admin/SliderYonetimi/Delete/5
+        // GET: Admin/Brands/Edit/5
+        public ActionResult Edit(int id)
+        {
+            var model = manager.Find(id);
+            return View(model);
+        }
+
+        // POST: Admin/Brands/Edit/5
+        [HttpPost]
+        public ActionResult Edit(int id, Brand brand, HttpPostedFileBase Logo)
+        {
+            try
+            {
+                // TODO: Add update logic here
+                if (Logo != null)
+                {
+                    Logo.SaveAs(Server.MapPath("/Img/" + Logo.FileName));
+                    brand.Logo = Logo.FileName;
+                }
+                manager.Update(brand);
+                manager.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                ModelState.AddModelError("", "Hata Oluştu!");
+            }
+            return View(brand);
+        }
+
+        // GET: Admin/Brands/Delete/5
         public ActionResult Delete(int id)
         {
             var model = manager.Find(id);
             return View(model);
         }
 
-        // POST: Admin/SliderYonetimi/Delete/5
+        // POST: Admin/Brands/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
