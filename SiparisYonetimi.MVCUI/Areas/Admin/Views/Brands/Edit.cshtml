@@ -27,6 +27,7 @@
             @Html.LabelFor(model => model.Logo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Logo, new { htmlAttributes = new { @class = "form-control", type = "file" } })
+                <img src="~/Img/@Model.Logo" alt="" height="70" />
                 @Html.ValidationMessageFor(model => model.Logo, "", new { @class = "text-danger" })
             </div>
         </div>

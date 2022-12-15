@@ -126,7 +126,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\BrandsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\KullaniciYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\MainController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MusteriYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderYonetimiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -176,6 +178,14 @@
     <Content Include="Areas\Admin\Views\Brands\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Brands\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Brands\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\KullaniciYonetimi\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\KullaniciYonetimi\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\KullaniciYonetimi\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\KullaniciYonetimi\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\MusteriYonetimi\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\MusteriYonetimi\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\MusteriYonetimi\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\MusteriYonetimi\Delete.cshtml" />
     <None Include="Scripts\jquery-3.6.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.1.js" />
     <Content Include="Scripts\jquery-3.6.1.min.js" />
