@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Managers\BrandManager.cs" />
     <Compile Include="Managers\CategoryManager.cs" />
+    <Compile Include="Managers\ContactManager.cs" />
     <Compile Include="Managers\CustomerManager.cs" />
     <Compile Include="Managers\ProductManager.cs" />
     <Compile Include="Managers\SliderManager.cs" />
