@@ -5,6 +5,7 @@ using System.Web.Mvc;
 
 namespace SiparisYonetimi.MVCUI.Areas.Admin.Controllers
 {
+    [Authorize]
     public class BrandsController : Controller
     {
         BrandManager manager = new BrandManager();

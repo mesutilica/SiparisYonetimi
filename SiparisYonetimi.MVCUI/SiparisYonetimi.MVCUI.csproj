@@ -129,6 +129,7 @@
     <Compile Include="Areas\Admin\Controllers\ContactsController.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\KullaniciYonetimiController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\MainController.cs" />
     <Compile Include="Areas\Admin\Controllers\MusteriYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderYonetimiController.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomePageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +203,7 @@
     <Content Include="Areas\Admin\Views\Contacts\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Contacts\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Contacts\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <None Include="Scripts\jquery-3.6.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.1.js" />
     <Content Include="Scripts\jquery-3.6.1.min.js" />
@@ -226,11 +229,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_PartialMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

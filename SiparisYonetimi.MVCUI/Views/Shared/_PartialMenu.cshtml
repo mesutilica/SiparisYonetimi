@@ -1,0 +1,8 @@
+﻿@model IEnumerable<SiparisYonetimi.Entities.Category>
+
+@foreach (var kategori in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link active" href="/Categories/Index/@kategori.Id">@kategori.Name</a>
+    </li>
+}

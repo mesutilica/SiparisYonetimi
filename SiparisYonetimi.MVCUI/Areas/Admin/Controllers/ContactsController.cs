@@ -4,6 +4,7 @@ using System.Web.Mvc;
 
 namespace SiparisYonetimi.MVCUI.Areas.Admin.Controllers
 {
+    [Authorize]
     public class ContactsController : Controller
     {
         ContactManager manager = new ContactManager();
