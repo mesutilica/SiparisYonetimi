@@ -24,13 +24,15 @@
                         @Html.Action("PartialMenu", "Home")
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="Iletisim.aspx">İletişim</a>
+                            <a class="nav-link active" href="/Home/Contact">İletişim</a>
                         </li>
 
                     </ul>
                     <div class="d-flex" role="search">
-                        <asp:TextBox ID="txtUrunAra" runat="server" CssClass="form-control me-2" required placeholder="Ürün Ara"></asp:TextBox>
-                        <asp:Button ID="btnAra" runat="server" Text="Ara" CssClass="btn btn-light" OnClick="btnAra_Click" />
+                        <form action="/Products/Search" method="get" class="input-group">
+                            <input name="kelime" id="Text1" type="text" class="form-control me-2" required placeholder="Ürün Ara" />
+                            <input id="Submit1" type="submit" value="Ara" class="btn btn-light" />
+                        </form>
                     </div>
                 </div>
             </div>

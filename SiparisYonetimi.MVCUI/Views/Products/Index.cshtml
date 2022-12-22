@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SiparisYonetimi.Entities.Product>
+@{
+    ViewBag.Title = "Ürünlerimiz";
+}
+
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Ürünlerimiz</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Tüm Ürünlerimiz</p>
+        </div>
+    </div>
+</header>
+
+<div class="container my-5">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        
+        @foreach (var item in Model)
+        {
+            @Html.Partial("Productview", item)
+        }
+
+    </div>
+    <!-- /.row -->
+</div>

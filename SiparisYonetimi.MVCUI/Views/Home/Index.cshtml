@@ -43,11 +43,25 @@
     $(".carousel-inner .carousel-item:first-child").addClass("active");
 </script>
 
-<div class="container marketing">
-    <h2>Markalar</h2>
+<div class="container my-5">
+    <h2 class="text-center pb-3">Ürünlerimiz</h2>
+    <!-- Three columns of text below the carousel -->
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+       
+        @foreach (var item in Model.Products)
+        {
+            @Html.Partial("Productview", item)
+        }
+
+    </div>
+    <!-- /.row -->
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center pb-3">Markalar</h2>
     <!-- Three columns of text below the carousel -->
     <div class="row">
-
+        <hr />
         @foreach (var item in Model.Brands)
         {
             <div class="col-lg-2">

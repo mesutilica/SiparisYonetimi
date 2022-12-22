@@ -26,6 +26,9 @@
         <th>
             @Html.DisplayNameFor(model => model.IsActive)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsHome)
+        </th>
         <th></th>
     </tr>
 
@@ -46,6 +49,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsHome)
             </td>
             <td>
                 @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }) |
